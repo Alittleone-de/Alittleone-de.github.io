@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>选择游戏</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+  <link rel="icon" href="icon.png">
+    <style>
+a{ 
+    text-decoration : none;
+    color : #00000080;
+    
+}
+a:hover{
+    text-decoration : none;
+    color : #00000080; 
+} 
+a:visited{
+    text-decoration : none;
+    color : #00000080;
+}
+}
+      html,body {
+        display: block;
+        margin: 6px;
+        padding: 0;
+        overflow: hidden;
+        user-select: none;
+        background: rgba(0, 0, 0, 0);
+      }
+
+      .wrapper {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #e1dcdc;
+        box-shadow: inset 0px 0px 16px 0px black;
+        font: normal 14px/1 "PingFang SC","Microsoft YaHei UI","微软雅黑",Arial,"Hiragino Sans GB",sans-serif;
+      }
+
+      .progress {
+        position: relative;
+        box-sizing: border-box;
+        height: 37%;
+        width: 96%;
+        padding: 4px;
+        background: rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        box-shadow: 0 1px 20px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+      }
+
+      .progress-bar {
+        position: relative;
+        height: 28px;
+        width: 0;
+        visibility: hidden;
+        max-width: 100%;
+        border-radius: 4px;
+        background-color: #0e89b6;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+        transition: width 0.4s ease;
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+      }
+
+      .tips {
+        position: absolute;
+        font-size: 32px;
+        color: rgba(255, 255, 255, 0.9);
+        text-shadow: 6px -4px 6px rgba(0, 0, 0, 0.6);
+        margin: 0;
+        padding: 0;
+        z-index: 10;
+      } 
+
+        .margin{
+          margin: 0px;
+      }
+        .div1{
+          position:relative;
+          animation:anim 2s;
+}
+        .div2{
+          position:relative;
+          animation:anim 5s;
+}
+@keyframes anim { 
+	0% {opacity: 0;}
+	100%{opacity:1;
+}
+    </style>
+</head>
+
+<body class="margin">
+  <div class="wrapper">
+    <div class="progress div1">
+      <div id="percentBar" class="progress-bar"></div>
+    </div>
+    <p class="tips"><a class="iconfont icon-saolei div2" href="minesweeper/"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               <a class="iconfont icon-2048 div2" href="2048/"></a>
+    </p>
+  </div>
+
+  
+
+</body></html>
